@@ -1,0 +1,164 @@
+/* 
+Website Name: Favourite Sports Team
+Website Author: Shalil Dsilva
+Student id: 0810045 
+
+Color Guide:
+#f3f6f9 - Light Grey
+#98c5e9 - Light Blue
+rgba(0, 0, 0, 0.5) - Black
+
+Typography Guide:
+Body: Verdana, Geneva, Tahoma, sans-serif - 1.2em;
+
+
+*********************************
+=================
+Table of Contents
+=================
+1. Body Styles
+2. Header Styles 
+3. Main Styles
+4. Link Styles
+5. Footer Styles
+*********************************
+*/
+
+
+
+/*******************
+1. Body Styles 
+********************/
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2em;
+    line-height: normal;
+    background: linear-gradient(180deg, #f3f6f9 60%, #98c5e9 100%);
+}
+
+/*******************
+2. Header Styles 
+********************/
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #98c5e9;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header figure {
+    padding-right: 10px;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+/*******************
+3. Main Styles 
+********************/
+article:first-child {
+    height: calc(100vh - 77px);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/mancity-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+
+article:first-child h2 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+p,
+h2,
+ul {
+    margin: auto;
+    width: 60%;
+}
+
+
+article:nth-child(2n+0) h2,
+aside h2 {
+    padding-top: 130px;
+    padding-bottom: 30px;
+}
+
+aside li,
+article:nth-child(2n+0) p:nth-child(even) {
+    padding-bottom: 15px;
+}
+
+article:nth-child(2n+0) figure,
+aside figure {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 10px;
+}
+
+article:nth-child(2n+0) figure img,
+aside figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+aside {
+    padding-bottom: 120px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+figcaption,
+span {
+    font-size: 13px;
+}
+
+span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*******************
+4. Link Styles 
+********************/
+a:link {
+    color: orange;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #62b2f4;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+/*******************
+5. Footer Styles 
+********************/
+footer {
+    background-color: #f3f6f9;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
